@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll in case of overflow */
+}
+
+/* Sticky Header Styles */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  z-index: 100; /* Adjust the z-index to ensure it appears above other content */
+}
+
+.main-layout {
+  background-color: #ef4557;
+  min-height: 100vh; /* Set the height to 100% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling when needed */
+}
+
+.photo-side img {
+  width: 50%;
+  object-fit: contain;
+  box-shadow: -7px 4px 8px 0 rgba(0.2, 0.2, 0.2, 0.2); /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for resizing */
+}
+
+.image-container {
+  width: 50%; /* Adjust as needed */
+  margin: auto;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
