@@ -1,40 +1,51 @@
 .noa-logo {
   display: flex;
   /* Adjust the gap to match your design preference */
-  gap: 10px;
-  font-weight: bold; /* Makes the font bold */
-  font-size: 140px; /* Increase the font size to make the logo much bigger */
+  gap: 15px;
+  font-weight: 1000; /* Makes the font bold */
+  font-size: 40px; /* Increase the font size to make the logo much bigger */
   /* You can add more design-specific fonts, colors, and other properties here */
 }
 
 .letter-box {
   position: relative; /* Needed for absolute positioning of letters */
-  border: 3px solid #ccfdfe; /* White border for the rectangle */
-  height: 150px; /* Adjust based on your requirement */
-  width: 150px; /* Adjust based on your requirement */
+  background-color: white; /* White border for the rectangle */
+  height: 70px; /* Adjust based on your requirement */
+  width: 70px; /* Adjust based on your requirement */
   display: flex;
   align-items: center; /* This aligns the child elements (the letters) vertically center */
   justify-content: center; /* This centers the child elements horizontally */
-  color: #ccfdfe; /* This should be the same as your page's background color */
+  color: #f3d790; /* This should be the same as your page's background color */
+}
+
+.letter-box:nth-child(1) {
+  height: 70px; /* Adjust based on your requirement */
+  width: 55px; /* Adjust based on your requirement */
+}
+.letter-box:nth-child(2) {
+  height: 50px; /* Adjust based on your requirement */
+  width: 40px; /* Adjust based on your requirement */
+  margin-top: 30px;
+}
+.letter-box:nth-child(3) {
+  height: 55px; /* Adjust based on your requirement */
+  width: 55px; /* Adjust based on your requirement */
+  font-size: 35px;
 }
 
 /* Positions the 'N' to the left */
 .letter-box:nth-child(1) span {
   position: absolute;
-  left: 10px; /* Adjust as necessary for the desired offset */
+  left: -2px; /* Adjust as necessary for the desired offset */
   top: 50%;
+  font-size: 45px;
   transform: translateY(-50%);
-}
-
-/* Positions the 'o' off-center to the left and a bit down */
-.letter-box:nth-child(2) {
-  margin-top: 20px; /* Adjust as necessary to move 'o' slightly down */
 }
 
 .letter-box:nth-child(2) span {
   position: absolute;
   left: 5px; /* Adjust as necessary for the desired offset */
-  top: 25%; /* Moves 'o' a bit down from the center */
+  top: 5%; /* Moves 'o' a bit down from the center */
 }
 
 /* Keeps the 'A' centered */
@@ -44,36 +55,3 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
-.o-container {
-  position: relative;
-}
-
-.o-full,
-.o-clipped {
-  position: absolute;
-  font-size: 96px; /* Adjust font size as needed */
-  font-weight: bold;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.o-full {
-  color: #ccfdfe; /* Color for the part of 'O' outside the rectangle */
-}
-
-.o-clipped-container {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.o-clipped {
-  color: #ef4557; /* Different color for the part of 'O' inside the rectangle */
-}
-
-

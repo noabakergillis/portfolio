@@ -4,17 +4,15 @@ import "../styles/NoaLogo.css";
 const NoaLogo: React.FC = () => {
   return (
     <div className="noa-logo">
-      {/* ... other letters ... */}
       <div className="letter-box">
-        <span>n</span>
+        <span>N</span>
       </div>
       <div className="letter-box">
         <span>o</span>
       </div>
       <div className="letter-box">
-        <span>a</span>
+        <span>A</span>
       </div>
-      {/* ... other letters ... */}
     </div>
   );
 };

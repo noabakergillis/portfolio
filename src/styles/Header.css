@@ -1,9 +1,26 @@
 /* Your Existing Header Styles */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px 20px;
+  padding-top: 50px;
+  padding-bottom: 140px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: end;
+  padding: 50px;
+  padding-bottom: 5px;
+  padding-right: 150px;
+  font-size: 12px;
+}
+
+.header-menu span {
+  padding: 20px;
+  font-weight: 600;
+  color: gray;
 }
 
 .header-left {

@@ -1,0 +1,31 @@
+.project-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.project-description-block {
+  display: flex;
+  justify-content: center;
+  margin: 0px 80px;
+}
+
+.project-description-inner-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-description {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.project-row {
+  display: flex;
+  margin: 0px 80px 100px 80px;
+}
+
+.project-block {
+  display: flex;
+  justify-content: space-between;
+}

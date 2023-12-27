@@ -1,0 +1,33 @@
+.artwork-row {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items vertically */
+  margin: 0 20px;
+  max-height: 100%; /* Maximum height is the height of the container */
+  object-fit: contain; /* Keeps the aspect ratio of the image */
+  width: auto;
+}
+
+.artwork-row img {
+  flex: 1;
+  margin: 10px;
+  max-height: 100%;
+  object-fit: contain;
+  width: auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Adjust to space-between or center */
+  padding: 15px;
+  height: 100%;
+}
+
+.column img {
+  margin-bottom: 10px; /* Add some margin to the bottom of each image */
+  object-fit: contain;
+  max-width: 100%;
+
+  height: auto; /* Adjust height to auto or a fixed value */
+}
