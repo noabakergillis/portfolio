@@ -6,13 +6,15 @@ import ScrollingImages from "./components/ScrollingImages";
 import FineArt from "./components/FineArt";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Design from "./components/Design";
+import Pav from "./components/PAV";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<FineArt />} />
-        <Route path="/design" element={<Design />} />
+        <Route path="/" element={<Design />} />
+        <Route path="/fine-art" element={<FineArt />} />
+        <Route path="/pav" element={<Pav />} />
         {/* Other routes */}
       </Routes>
     </Router>

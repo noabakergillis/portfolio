@@ -7,14 +7,11 @@ const Header: React.FC = () => {
   return (
     <div>
       <div className="header-menu">
-        {/* Link to Fine Art page */}
-        <Link style={{ textDecoration: "none" }} to="/">
-          <span>FINE ART</span>
-        </Link>
-
-        {/* Link to Design page */}
-        <Link style={{ textDecoration: "none" }} to="/design">
+        <Link style={{ textDecoration: "none" }} to="/f">
           <span>DESIGN</span>
+        </Link>
+        <Link style={{ textDecoration: "none" }} to="/fine-art">
+          <span>FINE ART</span>
         </Link>
       </div>
       <header className="header">

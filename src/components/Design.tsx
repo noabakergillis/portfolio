@@ -1,14 +1,6 @@
 import Header from "./header";
-import React, { useState, useEffect } from "react";
-import florentineFramed from "../assets/florentine_framed.png";
-import abstractFramed from "../assets/abstract_framed.png";
-import marblesFramed from "../assets/marbles_framed.png";
-import beadedBencher from "../assets/beaded_bencher_framed.png";
-import manFramed from "../assets/man_framed.png";
-import birthdayPrint from "../assets/birthday_print_framed.png";
-import parisFramed from "../assets/paris_framed.png";
-import lipsFramed from "../assets/lips-framed-no-shadow.png";
 import "../styles/Design.css";
+import { Link } from "react-router-dom";
 
 const Design: React.FC = () => {
   return (
@@ -24,7 +16,9 @@ const Design: React.FC = () => {
         </div>
         <div className="project-description-block">
           <div>
-            <div className="project-title">Personal Autonomous Vehicle</div>
+            <Link style={{ textDecoration: "none" }} to="/pav">
+              <div className="project-title">Personal Autonomous Vehicle</div>
+            </Link>
             <div className="project-description">
               The PAV project reimagines autonomous Cruise vehicles as your
               personal robot chauffeur. PAV drops you off at work, picks up your
