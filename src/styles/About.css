@@ -1,0 +1,16 @@
+.profile-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px;
+  margin-top: 0px;
+}
+
+.profile-block img {
+  border-radius: 150px;
+  width: 25%;
+}
+
+.profile-block span {
+  width: 50%;
+}

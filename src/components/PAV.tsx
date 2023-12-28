@@ -6,7 +6,7 @@ import pavModes from "../assets/pav_modes.png";
 
 const Pav: React.FC = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#E6E1DA" }}>
       <div>
         <Header />
       </div>
@@ -26,7 +26,7 @@ const Pav: React.FC = () => {
         <video width="550" controls>
           <source src="/pav_tv.mp4" type="video/mp4" />
         </video>
-        <video style={{ borderRadius: "5px" }} width="380" controls>
+        <video width="380" controls>
           <source src="/seats.mov" type="video/mp4" />
         </video>
       </div>

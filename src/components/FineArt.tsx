@@ -12,7 +12,7 @@ import "../styles/ArtStyles.css";
 
 const FineArt: React.FC = () => {
   return (
-    <div style={{ backgroundColor: "#f3d790" }}>
+    <div style={{ backgroundColor: "#E6E1DA" }}>
       <div>
         <Header />
       </div>

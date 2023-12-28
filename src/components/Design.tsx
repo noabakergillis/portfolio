@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 const Design: React.FC = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#E6E1DA" }}>
       <div>
         <Header />
       </div>
       <div className="project-block">
         <div className="project-row">
-          <video width="600" controls>
+          <video width="800" controls>
             <source src="/compressed_pav_video.mp4" type="video/mp4" />
           </video>
         </div>
@@ -43,14 +43,14 @@ const Design: React.FC = () => {
           </div>
         </div>
         <div className="project-row">
-          <video width="600" controls>
+          <video width="800" controls>
             <source src="/compressed_origin_tool.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
       <div className="project-block">
         <div className="project-row">
-          <video width="600" controls muted>
+          <video width="800" controls muted>
             <source src="/milab_robot.mp4" type="video/mp4" />
           </video>
         </div>

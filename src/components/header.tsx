@@ -8,16 +8,14 @@ import { useLocation } from "react-router-dom";
 const Header: React.FC = () => {
   const location = useLocation();
   const [logoColor, setLogoColor] = useState("#000"); // Default color
-  const [letterColor, setLetterColor] = useState("#fff");
+  const [letterColor, setLetterColor] = useState("#E6E1DA");
 
   useEffect(() => {
     // Logic to determine the color based on the path
     if (location.pathname === "/fine-art") {
       setLogoColor("#fff"); // Color for fine art page
-      setLetterColor("#f3d790");
     } else {
       setLogoColor("#000"); // Color for other pages
-      setLogoColor("fff");
     }
   }, [location.pathname]);
 
