@@ -23,7 +23,7 @@ const Pav: React.FC = () => {
       </div>
       <div className="cabin-controls-block">
         <img src={cabinControls} alt="cabinControls" />
-        <video width="550" controls>
+        <video width="590" controls>
           <source src="/pav_tv.mp4" type="video/mp4" />
         </video>
         <video width="380" controls>
