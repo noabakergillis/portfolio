@@ -1,0 +1,46 @@
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0px 50px;
+  color: black;
+}
+
+.project-subtext {
+  font-size: 20px;
+  margin: 30px 50px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.intro {
+  font-size: 20px;
+  margin: 75px 50px;
+  width: 50%;
+}
+
+.cabin-controls-block {
+  display: flex;
+  margin: 50px 30px 75px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabin-controls-block img {
+  width: 28%;
+  border-radius: 5px;
+}
+
+.navigation-block {
+  margin: 50px;
+  display: flex;
+}
+
+.navigation-text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15%;
+}

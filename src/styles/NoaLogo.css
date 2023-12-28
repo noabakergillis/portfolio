@@ -9,13 +9,11 @@
 
 .letter-box {
   position: relative; /* Needed for absolute positioning of letters */
-  background-color: white; /* White border for the rectangle */
   height: 70px; /* Adjust based on your requirement */
   width: 70px; /* Adjust based on your requirement */
   display: flex;
   align-items: center; /* This aligns the child elements (the letters) vertically center */
   justify-content: center; /* This centers the child elements horizontally */
-  color: #f3d790; /* This should be the same as your page's background color */
 }
 
 .letter-box:nth-child(1) {

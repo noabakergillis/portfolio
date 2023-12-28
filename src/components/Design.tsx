@@ -10,7 +10,7 @@ const Design: React.FC = () => {
       </div>
       <div className="project-block">
         <div className="project-row">
-          <video width="520" controls>
+          <video width="600" controls>
             <source src="/compressed_pav_video.mp4" type="video/mp4" />
           </video>
         </div>
@@ -30,7 +30,9 @@ const Design: React.FC = () => {
       <div className="project-block">
         <div className="project-description-block">
           <div>
-            <div className="project-title">Origin DJ Board</div>
+            <Link style={{ textDecoration: "none" }} to="/origin-dj">
+              <div className="project-title">Origin DJ Board</div>
+            </Link>
             <div className="project-description">
               The DJ Board allows UX designers to control features of the Origin
               Cruise car as they design, prototype, and later run UX research
@@ -41,14 +43,14 @@ const Design: React.FC = () => {
           </div>
         </div>
         <div className="project-row">
-          <video width="520" controls>
+          <video width="600" controls>
             <source src="/compressed_origin_tool.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
       <div className="project-block">
         <div className="project-row">
-          <video width="520" controls muted>
+          <video width="600" controls muted>
             <source src="/milab_robot.mp4" type="video/mp4" />
           </video>
         </div>

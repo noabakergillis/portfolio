@@ -7,6 +7,7 @@ import FineArt from "./components/FineArt";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Design from "./components/Design";
 import Pav from "./components/PAV";
+import OriginDJ from "./components/OriginDJ";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path="/" element={<Design />} />
         <Route path="/fine-art" element={<FineArt />} />
         <Route path="/pav" element={<Pav />} />
+        <Route path="/origin-dj" element={<OriginDJ />} />
+        <Route path="/about" element={<OriginDJ />} />
         {/* Other routes */}
       </Routes>
     </Router>
