@@ -18,7 +18,6 @@ function App() {
         <Route path="/fine-art" element={<FineArt />} />
         <Route path="/pav" element={<Pav />} />
         <Route path="/origin-dj" element={<OriginDJ />} />
-        <Route path="/about" element={<About />} />
         {/* Other routes */}
       </Routes>
     </Router>

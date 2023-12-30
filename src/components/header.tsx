@@ -23,13 +23,10 @@ const Header: React.FC = () => {
     <div>
       <div className="header-menu">
         <Link style={{ textDecoration: "none" }} to="/">
-          <span>DESIGN</span>
+          <span>WORK</span>
         </Link>
         <Link style={{ textDecoration: "none" }} to="/fine-art">
           <span>FINE ART</span>
-        </Link>
-        <Link style={{ textDecoration: "none" }} to="/about">
-          <span>ABOUT</span>
         </Link>
       </div>
       <header className="header">

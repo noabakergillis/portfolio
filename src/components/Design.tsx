@@ -1,13 +1,34 @@
 import Header from "./header";
+import HorizontalLine from "./horizontalLine";
 import "../styles/Design.css";
 import { Link } from "react-router-dom";
+import About from "./About";
 
 const Design: React.FC = () => {
   return (
     <div style={{ backgroundColor: "#E6E1DA" }}>
-      <div>
-        <Header />
-      </div>
+      <Header />
+      <About />
+      <HorizontalLine />
+      {/* <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignContent: "center",
+        }}
+      >
+        <div
+          style={{
+            marginBottom: "50px",
+            color: "gray",
+            width: "90%",
+            fontSize: "18px",
+          }}
+        >
+          work
+        </div>
+      </div> */}
+
       <div className="project-block">
         <div className="project-row">
           <video width="800" controls>
@@ -22,8 +43,28 @@ const Design: React.FC = () => {
             <div className="project-description">
               The PAV project reimagines autonomous Cruise vehicles as your
               personal robot chauffeur. PAV drops you off at work, picks up your
-              kids from school, and parks itself--all so you don't have to.
+              kids from school, and parks itself, seamlessly integrating itself
+              into your life to bring you convenience and joy. The concept went
+              from sketch to a working, drivable prototype in 6 months.
             </div>
+            <div className="project-description" style={{ paddingTop: "15px" }}>
+              I worked primarily on UI design and implementation for a built-in
+              retractable tablet, which served as the user's main point of
+              interaction with the car. I used Figma and Blender for designs,
+              and built this out in Kotlin and Unity.
+            </div>
+            <div className="project-description" style={{ paddingTop: "15px" }}>
+              This video was made by Cruise's marketing team to showcase the PAV
+              project to senior leadership.
+            </div>
+            <Link style={{ color: "black" }} to="/pav">
+              <div
+                className="project-description"
+                style={{ paddingTop: "15px" }}
+              >
+                Click to see case study
+              </div>
+            </Link>
           </div>
         </div>
       </div>

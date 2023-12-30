@@ -17,7 +17,7 @@
 }
 
 .project-description {
-  font-size: 16px; /* Size on desktop */
+  font-size: 14px; /* Size on desktop */
   font-weight: 400;
 }
 
@@ -29,6 +29,7 @@
 .project-block {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 
 /* Media query for mobile devices */
