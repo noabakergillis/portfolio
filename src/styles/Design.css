@@ -1,5 +1,5 @@
 .project-title {
-  font-size: 28px;
+  font-size: 28px; /* Larger on desktop */
   font-weight: 600;
   margin-bottom: 25px;
   color: black;
@@ -8,7 +8,7 @@
 .project-description-block {
   display: flex;
   justify-content: center;
-  margin: 0px 80px;
+  margin: 0px 80px; /* Spacing on desktop */
 }
 
 .project-description-inner-block {
@@ -17,16 +17,41 @@
 }
 
 .project-description {
-  font-size: 16px;
+  font-size: 16px; /* Size on desktop */
   font-weight: 400;
 }
 
 .project-row {
   display: flex;
-  margin: 0px 80px 100px 80px;
+  margin: 0px 80px 100px 80px; /* Spacing on desktop */
 }
 
 .project-block {
   display: flex;
   justify-content: space-between;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .project-title {
+    font-size: 22px;
+    margin: 15px 0px;
+  }
+
+  .project-description-block,
+  .project-row {
+    margin: 0px 20px;
+  }
+
+  .project-description {
+    font-size: 14px; /* Smaller text on mobile */
+    margin-bottom: 25px;
+  }
+
+  .project-block {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: center; /* Center align the stacked elements */
+  }
+
+  /* Adjust other elements as needed for mobile */
 }

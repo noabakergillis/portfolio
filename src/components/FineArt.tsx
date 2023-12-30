@@ -12,24 +12,16 @@ import "../styles/ArtStyles.css";
 
 const FineArt: React.FC = () => {
   return (
-    <div style={{ backgroundColor: "#E6E1DA" }}>
+    <div>
       <div>
         <Header />
       </div>
-      <div
-        style={{
-          padding: "0 100px",
-          paddingBottom: "70px",
-          display: "flex",
-          height: "80vh",
-        }}
-      >
+      <div className="art-block-one">
         <div className="artwork-row">
           <img
             className="artwork-image"
             src={florentineFramed}
             style={{
-              flex: 1,
               boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.5)",
             }}
             alt="Artwork"
@@ -38,7 +30,6 @@ const FineArt: React.FC = () => {
             className="artwork-image"
             src={lipsFramed}
             style={{
-              flex: 2,
               boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.5)",
             }}
             alt="Artwork"
@@ -54,7 +45,7 @@ const FineArt: React.FC = () => {
           </div>
         </div>
       </div>
-      <div style={{ padding: "0 100px", display: "flex", height: "80vh" }}>
+      <div className="art-block-two">
         <div className="artwork-row">
           <div className="column">
             <img className="artwork-image" src={marblesFramed} alt="Artwork" />
