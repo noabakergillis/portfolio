@@ -4,7 +4,7 @@
   gap: 15px;
   font-weight: 1000; /* Makes the font bold */
   font-size: 40px; /* Increase the font size to make the logo much bigger */
-  /* You can add more design-specific fonts, colors, and other properties here */
+  color: #e6e1da;
 }
 
 .letter-box {

@@ -1,17 +1,13 @@
 import React from "react";
 import "../styles/NoaLogo.css";
 
-const NoaLogo: React.FC<{ color: string; letterColor: string }> = ({
-  color,
-  letterColor,
-}) => {
+const NoaLogo: React.FC<{ color: string }> = ({ color }) => {
   return (
     <div className="noa-logo">
       <div
         className="letter-box"
         style={{
           backgroundColor: color,
-          color: letterColor,
           transition: "background-color 0.5s ease",
         }}
       >
@@ -21,7 +17,6 @@ const NoaLogo: React.FC<{ color: string; letterColor: string }> = ({
         className="letter-box"
         style={{
           backgroundColor: color,
-          color: letterColor,
           transition: "background-color 0.5s ease",
         }}
       >
@@ -31,7 +26,6 @@ const NoaLogo: React.FC<{ color: string; letterColor: string }> = ({
         className="letter-box"
         style={{
           backgroundColor: color,
-          color: letterColor,
           transition: "background-color 0.5s ease",
         }}
       >

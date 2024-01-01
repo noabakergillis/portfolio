@@ -7,31 +7,39 @@ import { useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
   const location = useLocation();
-  const [logoColor, setLogoColor] = useState("#000"); // Default color
-  const [letterColor, setLetterColor] = useState("#E6E1DA");
+  const [logoColor, setLogoColor] = useState("#000");
+  const [workColor, setWorkColor] = useState("gray"); // Default color for 'WORK'
+  const [fineArtColor, setFineArtColor] = useState("gray"); // Default color for 'FINE ART'
 
   useEffect(() => {
     // Logic to determine the color based on the path
     if (location.pathname === "/fine-art") {
       setLogoColor("#fff"); // Color for fine art page
+      setWorkColor("black");
+      setFineArtColor("gray");
     } else {
       setLogoColor("#000"); // Color for other pages
+      setWorkColor("gray");
+      setFineArtColor("black");
     }
   }, [location.pathname]);
 
   return (
     <div>
       <div className="header-menu">
-        <Link style={{ textDecoration: "none" }} to="/">
+        <Link style={{ textDecoration: "none", color: fineArtColor }} to="/">
           <span>WORK</span>
         </Link>
-        <Link style={{ textDecoration: "none" }} to="/fine-art">
+        <Link
+          style={{ textDecoration: "none", color: workColor }}
+          to="/fine-art"
+        >
           <span>FINE ART</span>
         </Link>
       </div>
       <header className="header">
         <Link style={{ textDecoration: "none" }} to="/">
-          <NoaLogo color={logoColor} letterColor={letterColor} />
+          <NoaLogo color={logoColor} />
         </Link>
       </header>
     </div>
