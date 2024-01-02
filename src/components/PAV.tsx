@@ -38,10 +38,10 @@ const Pav: React.FC = () => {
         with a retractable tablet built into the main armrest. I focused on
         designing the interface for the tablet, and then later on building out
         the tablet OS. In designing the interface, I focused on two main
-        questions: how can the user feel in control of the drive without a
-        steering wheel? and, how can we harness the new physicality of this
-        product (reclining seats, tinting windows, etc.) to make the tablet
-        interaction feel magical?
+        questions. How can the user feel in control of the drive without a
+        steering wheel? How can we harness the new physicality of this product
+        (reclining seats, tinting windows, etc.) to make the tablet interaction
+        feel magical?
       </div>
       <div className="pav-intro">
         The PAV team was a 10 person, cross-disciplinary team, including vehicle

@@ -11,6 +11,7 @@ import OriginDJ from "./components/OriginDJ";
 import About from "./components/About";
 import ScrollToTop from "./components/ScrollToTop";
 import Magnetform from "./components/Magnetform";
+import Audiovisual from "./components/Audiovisual";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/pav" element={<Pav />} />
         <Route path="/origin-dj" element={<OriginDJ />} />
         <Route path="/magnetform" element={<Magnetform />} />
+        <Route path="/audiovisual" element={<Audiovisual />} />
         {/* Other routes */}
       </Routes>
     </Router>

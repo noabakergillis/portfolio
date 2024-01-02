@@ -10,6 +10,7 @@ const Header: React.FC = () => {
   const [logoColor, setLogoColor] = useState("#000");
   const [workColor, setWorkColor] = useState("gray"); // Default color for 'WORK'
   const [fineArtColor, setFineArtColor] = useState("gray"); // Default color for 'FINE ART'
+  const [audiovisColor, setAudiovisColor] = useState("gray");
 
   useEffect(() => {
     // Logic to determine the color based on the path
@@ -17,10 +18,17 @@ const Header: React.FC = () => {
       setLogoColor("#fff"); // Color for fine art page
       setWorkColor("black");
       setFineArtColor("gray");
+      setAudiovisColor("gray");
+    } else if (location.pathname == "/audiovisual") {
+      setLogoColor("#000"); // Color for other pages
+      setWorkColor("gray");
+      setFineArtColor("gray");
+      setAudiovisColor("black");
     } else {
       setLogoColor("#000"); // Color for other pages
       setWorkColor("gray");
       setFineArtColor("black");
+      setAudiovisColor("gray");
     }
   }, [location.pathname]);
 
@@ -35,6 +43,12 @@ const Header: React.FC = () => {
           to="/fine-art"
         >
           <span>FINE ART</span>
+        </Link>
+        <Link
+          style={{ textDecoration: "none", color: audiovisColor }}
+          to="/audiovisual"
+        >
+          <span>AUDIO VISUAL</span>
         </Link>
       </div>
       <header className="header">
