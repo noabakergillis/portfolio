@@ -15,7 +15,6 @@ const Audiovisual: React.FC = () => {
     "/eye-drop-cropped.mp4",
     vj2,
     vj3,
-    "/dancing-loop2.mp4",
     vj4,
     vj5,
   ];
