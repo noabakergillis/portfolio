@@ -32,7 +32,7 @@ const Design: React.FC = () => {
       <div className="project-block">
         <div className="project-row">
           <video width="800" controls>
-            <source src="/compressed_pav_video.mp4" type="video/mp4" />
+            <source src="/compressed_pav_teaser.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="project-description-block">
