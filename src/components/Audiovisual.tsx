@@ -1,10 +1,10 @@
 import Header from "./header";
 import "../styles/Pav.css";
-import vj1 from "../assets/vj1.png";
-import vj2 from "../assets/vj2.png";
-import vj3 from "../assets/vj3.png";
-import vj4 from "../assets/vj4.png";
-import vj5 from "../assets/vj5.png";
+import vj1 from "../assets/vj1-min.png";
+import vj2 from "../assets/vj2-min.png";
+import vj3 from "../assets/vj3-min.png";
+import vj4 from "../assets/vj4-min.png";
+import vj5 from "../assets/vj5-min.png";
 import vjphilly from "../assets/vjphilly.jpeg";
 
 const Audiovisual: React.FC = () => {
@@ -26,17 +26,13 @@ const Audiovisual: React.FC = () => {
       </div>
       <div className="pav-title">Audio Visual Work</div>
       <div className="pav-intro">
-        Magnetform is a system that allows designers to experiment with building
-        shape-changing interfaces. Magnetform explores movement as an element of
-        design for everyday objects.
+        Outside of my work as a design engineer, I work as an audio visual
+        artist. In my day job, I curate the experience of technology; as an
+        audiovisual artist, I curate the experience of music and other people.
       </div>
       <div className="pav-intro">
-        My team designed Magnetform as an exploration tool rather than a final
-        product. We built a platform with four hidden robotic arms, each holding
-        a magnet, and built it into a table. The textile on top had embedded
-        magnets. We also built a simple interface that allowed users to control
-        the movement of magnetform. I focused primarily on designing the
-        movements of Magnetform, and writing the Arduino code for the interface.
+        I started doing art and light installations in Tel Aviv in 2019, and
+        continue my work in various venues around Philadelphia.
       </div>
       <div className="grid-container">
         {items.map((item, index) => (

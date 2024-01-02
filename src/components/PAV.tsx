@@ -9,7 +9,7 @@ const Pav: React.FC = () => {
     "/compressed_drive_and_park.mp4",
     pavScreen,
     cabinControls,
-    "/pav_tv.mp4",
+    "/pav-tv.mp4",
     "/seats.mov",
     pavModes,
     "/compressed_park.mp4",
