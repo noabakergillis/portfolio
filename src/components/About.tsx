@@ -9,10 +9,11 @@ const About: React.FC = () => {
       <img className="main-image" src={profilePic} alt="profile-pic" />
       <div style={{ width: "50%" }}>
         <div>
-          Hi! I'm a UX engineer based in Philadelphia. I'm passionate about
-          exploring the intersection of design and engineering. I love making
-          things that are beautiful and/or functional. I'm looking for a job
-          doing just that, and I'm open to relocating for the right adventure.
+          Hi! I'm a creative technologist based in Philadelphia. I'm passionate
+          about exploring the intersection of design and engineering. I love
+          making things that are beautiful and/or functional. I'm looking for a
+          job doing just that, and I'm open to relocating for the right
+          adventure.
         </div>
         <div style={{ marginTop: "25px" }}>
           Scroll down to see some recent work.
