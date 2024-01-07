@@ -32,23 +32,21 @@ const Header: React.FC = () => {
     }
   }, [location.pathname]);
 
+  const getLinkClassName = (path: string) => {
+    return location.pathname === path ? "selected" : "";
+  };
+
   return (
     <div>
       <div className="header-menu">
-        <Link style={{ textDecoration: "none", color: fineArtColor }} to="/">
-          <span>WORK</span>
+        <Link className={getLinkClassName("/")} to="/">
+          <div>WORK</div>
         </Link>
-        <Link
-          style={{ textDecoration: "none", color: workColor }}
-          to="/fine-art"
-        >
-          <span>FINE ART</span>
+        <Link className={getLinkClassName("/fine-art")} to="/fine-art">
+          <div>FINE ART</div>
         </Link>
-        <Link
-          style={{ textDecoration: "none", color: audiovisColor }}
-          to="/audiovisual"
-        >
-          <span>AUDIO VISUAL</span>
+        <Link className={getLinkClassName("/audiovisual")} to="/audiovisual">
+          <div>AUDIO VISUAL</div>
         </Link>
       </div>
       <header className="header">

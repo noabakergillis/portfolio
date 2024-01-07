@@ -9,7 +9,7 @@ const Magnetform: React.FC = () => {
   const items = [magnetForm, magnetformPres, robotArms];
 
   return (
-    <div style={{ backgroundColor: "#E6E1DA" }}>
+    <div>
       <div>
         <Header />
       </div>

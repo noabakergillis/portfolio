@@ -6,7 +6,7 @@ import About from "./About";
 
 const Design: React.FC = () => {
   return (
-    <div style={{ backgroundColor: "#E6E1DA" }}>
+    <div>
       <Header />
       <About />
       <HorizontalLine />

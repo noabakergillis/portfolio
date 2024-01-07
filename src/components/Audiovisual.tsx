@@ -20,7 +20,7 @@ const Audiovisual: React.FC = () => {
   ];
 
   return (
-    <div style={{ backgroundColor: "#E6E1DA" }}>
+    <div>
       <div>
         <Header />
       </div>

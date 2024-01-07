@@ -17,11 +17,6 @@
   font-size: 12px;
 }
 
-.header-menu span {
-  padding: 20px;
-  font-weight: 600;
-}
-
 .header-left {
   font-size: 24px;
   font-weight: bold;
@@ -33,4 +28,30 @@
   font-size: 180px;
   font-weight: bold;
   color: white;
+}
+
+.header-menu a div {
+  display: inline-block; /* Needed for transform to work on inline elements */
+  padding: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: gray;
+}
+
+.header-menu a div:hover {
+  rotate: 180deg;
+  transition: rotate 1s ease;
+}
+
+.header-menu a.selected div {
+  color: black;
+}
+
+.header-item {
+  display: inline-block; /* Needed for transform to work on inline elements */
+  padding: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: gray;
+  transition: transform 2s ease;
 }
