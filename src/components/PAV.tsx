@@ -85,8 +85,8 @@ const Pav: React.FC = () => {
       </div>
       <div className="pav-intro">
         The PAV team was a 10 person, cross-disciplinary team, including vehicle
-        engineers, software engineers, industrial designers, UI/UX designers
-        (myself and one other), and a PM.
+        engineers, software engineers, industrial designers, UI/UX designers,
+        and a PM.
       </div>
       <div className="grid-container">
         {items.map((item, index) => (
