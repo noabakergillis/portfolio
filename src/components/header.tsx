@@ -7,7 +7,6 @@ import { useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
   const location = useLocation();
-  const [logoColor, setLogoColor] = useState("#000");
   const [workColor, setWorkColor] = useState("gray"); // Default color for 'WORK'
   const [fineArtColor, setFineArtColor] = useState("gray"); // Default color for 'FINE ART'
   const [audiovisColor, setAudiovisColor] = useState("gray");
@@ -15,19 +14,16 @@ const Header: React.FC = () => {
   useEffect(() => {
     // Logic to determine the color based on the path
     if (location.pathname === "/fine-art") {
-      setLogoColor("#fff"); // Color for fine art page
-      setWorkColor("black");
-      setFineArtColor("gray");
+      setWorkColor("gray");
+      setFineArtColor("black");
       setAudiovisColor("gray");
     } else if (location.pathname == "/audiovisual") {
-      setLogoColor("#000"); // Color for other pages
       setWorkColor("gray");
       setFineArtColor("gray");
       setAudiovisColor("black");
     } else {
-      setLogoColor("#000"); // Color for other pages
-      setWorkColor("gray");
-      setFineArtColor("black");
+      setWorkColor("black");
+      setFineArtColor("gray");
       setAudiovisColor("gray");
     }
   }, [location.pathname]);
@@ -40,18 +36,18 @@ const Header: React.FC = () => {
     <div>
       <div className="header-menu">
         <Link className={getLinkClassName("/")} to="/">
-          <div>WORK</div>
+          <div style={{ color: workColor }}>WORK</div>
         </Link>
         <Link className={getLinkClassName("/fine-art")} to="/fine-art">
-          <div>FINE ART</div>
+          <div style={{ color: fineArtColor }}>FINE ART</div>
         </Link>
         <Link className={getLinkClassName("/audiovisual")} to="/audiovisual">
-          <div>AUDIO VISUAL</div>
+          <div style={{ color: audiovisColor }}>AUDIO VISUAL</div>
         </Link>
       </div>
       <header className="header">
         <Link style={{ textDecoration: "none" }} to="/">
-          <NoaLogo color={logoColor} />
+          <NoaLogo color="black" />
         </Link>
       </header>
     </div>

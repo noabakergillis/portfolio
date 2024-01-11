@@ -39,12 +39,8 @@
 }
 
 .header-menu a div:hover {
-  rotate: 180deg;
-  transition: rotate 1s ease;
-}
-
-.header-menu a.selected div {
-  color: black;
+  rotate: -15deg;
+  transition: rotate 0.3s ease;
 }
 
 .header-item {

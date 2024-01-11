@@ -2,11 +2,51 @@ import Header from "./header";
 import "../styles/OriginDJ.css";
 import originLit from "../assets/origin_lit_up.png";
 import originGUI from "../assets/origin_gui.png";
+import React, { useState, useEffect } from "react";
+import CustomCursor from "./CustomCursor";
 
 const OriginDJ: React.FC = () => {
+  const [showCursor, setShowCursor] = useState(true);
+  useEffect(() => {
+    const clickableElements = document.querySelectorAll(
+      'a, button, input, [role="button"]'
+    );
+
+    const videos = document.querySelectorAll("video");
+
+    const onMouseOver = () => {
+      const cursor = document.getElementById("customCursor");
+      if (cursor) cursor.style.backgroundColor = "#1F51FF";
+    };
+
+    const onMouseOut = () => {
+      const cursor = document.getElementById("customCursor");
+      if (cursor) cursor.style.backgroundColor = "darkgray";
+    };
+
+    videos.forEach((video) => {
+      video.addEventListener("mouseover", () => setShowCursor(false));
+      video.addEventListener("mouseout", () => setShowCursor(true));
+    });
+
+    clickableElements.forEach((el) => {
+      el.addEventListener("mouseover", onMouseOver);
+      el.addEventListener("mousedown", onMouseOut);
+      el.addEventListener("mouseout", onMouseOut);
+    });
+
+    return () => {
+      clickableElements.forEach((el) => {
+        el.removeEventListener("mouseover", onMouseOver);
+        el.removeEventListener("mouseout", onMouseOut);
+      });
+    };
+  }, []);
+
   const items = [originGUI, originLit, "/gui-with-seatbelt.mp4"];
   return (
     <div>
+      {showCursor && <CustomCursor />}
       <div>
         <Header />
       </div>
