@@ -27,7 +27,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
     const onMouseOver = () => {
       const cursor = document.getElementById("customCursor");
       if (cursor) {
-        cursor.style.backgroundColor = "#B026FF";
+        cursor.style.backgroundColor = "#FF1D8E";
         cursor.style.opacity = "0.7";
       }
     };
