@@ -1,47 +1,12 @@
 .artwork-row {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 0 20px;
-  max-height: 100%;
-  object-fit: contain;
-  width: auto;
+  justify-content: center;
 }
 
 .artwork-row img {
-  flex: 1;
   margin: 10px;
-  max-height: 100%;
-  object-fit: contain;
-  width: auto;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 15px;
-  height: 100%;
-}
-
-.column img {
-  margin-bottom: 10px;
-  object-fit: contain;
-  max-width: 100%;
-  height: auto;
-}
-
-.art-block-one {
-  padding: 0 100px;
-  padding-bottom: 70px;
-  display: flex;
-  height: 80vh;
-}
-
-.art-block-two {
-  padding: 0 100px;
-  display: flex;
-  height: 80vh;
+  width: 30%;
 }
 
 /* Media query for mobile devices */

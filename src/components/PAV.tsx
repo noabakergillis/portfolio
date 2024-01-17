@@ -17,12 +17,18 @@ const Pav: React.FC = () => {
 
     const onMouseOver = () => {
       const cursor = document.getElementById("customCursor");
-      if (cursor) cursor.style.backgroundColor = "#1F51FF";
+      if (cursor) {
+        cursor.style.backgroundColor = "#1F51FF";
+        cursor.style.opacity = "0.7";
+      }
     };
 
     const onMouseOut = () => {
       const cursor = document.getElementById("customCursor");
-      if (cursor) cursor.style.backgroundColor = "darkgray";
+      if (cursor) {
+        cursor.style.backgroundColor = "darkgray";
+        cursor.style.opacity = "1";
+      }
     };
 
     videos.forEach((video) => {

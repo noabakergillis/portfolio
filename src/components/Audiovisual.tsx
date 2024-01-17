@@ -21,12 +21,18 @@ const Audiovisual: React.FC = () => {
 
     const onMouseOver = () => {
       const cursor = document.getElementById("customCursor");
-      if (cursor) cursor.style.backgroundColor = "#97fe58";
+      if (cursor) {
+        cursor.style.backgroundColor = "#97fe58";
+        cursor.style.opacity = "0.7";
+      }
     };
 
     const onMouseOut = () => {
       const cursor = document.getElementById("customCursor");
-      if (cursor) cursor.style.backgroundColor = "darkgray";
+      if (cursor) {
+        cursor.style.backgroundColor = "darkgray";
+        cursor.style.opacity = "1";
+      }
     };
 
     videos.forEach((video) => {

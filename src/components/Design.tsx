@@ -17,12 +17,18 @@ const Design: React.FC = () => {
 
     const onMouseOver = () => {
       const cursor = document.getElementById("customCursor");
-      if (cursor) cursor.style.backgroundColor = "#F94541";
+      if (cursor) {
+        cursor.style.backgroundColor = "#F94541";
+        cursor.style.opacity = "0.7";
+      }
     };
 
     const onMouseOut = () => {
       const cursor = document.getElementById("customCursor");
-      if (cursor) cursor.style.backgroundColor = "darkgray";
+      if (cursor) {
+        cursor.style.backgroundColor = "darkgray";
+        cursor.style.opacity = "1";
+      }
     };
 
     videos.forEach((video) => {
@@ -50,31 +56,11 @@ const Design: React.FC = () => {
       <Header />
       <About />
       <HorizontalLine />
-      {/* <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignContent: "center",
-        }}
-      >
-        <div
-          style={{
-            marginBottom: "50px",
-            color: "gray",
-            width: "90%",
-            fontSize: "18px",
-          }}
-        >
-          work
-        </div>
-      </div> */}
 
       <div className="project-block">
-        <div className="project-row">
-          <video width="800" controls>
-            <source src="/compressed_pav_teaser.mp4" type="video/mp4" />
-          </video>
-        </div>
+        <video className="project-row" controls>
+          <source src="/compressed_pav_teaser.mp4" type="video/mp4" />
+        </video>
         <div className="project-description-block">
           <div>
             <Link style={{ textDecoration: "none" }} to="/pav">
@@ -142,18 +128,14 @@ const Design: React.FC = () => {
             </Link>
           </div>
         </div>
-        <div className="project-row">
-          <video width="800" controls>
-            <source src="/compressed_origin_tool.mp4" type="video/mp4" />
-          </video>
-        </div>
+        <video className="project-row" controls>
+          <source src="/compressed_origin_tool.mp4" type="video/mp4" />
+        </video>
       </div>
       <div className="project-block">
-        <div className="project-row">
-          <video width="800" controls muted>
-            <source src="/milab_robot.mp4" type="video/mp4" />
-          </video>
-        </div>
+        <video className="project-row" controls muted>
+          <source src="/milab_robot.mp4" type="video/mp4" />
+        </video>
         <div className="project-description-block">
           <div>
             <div className="project-title">Magnetform</div>

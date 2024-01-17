@@ -8,6 +8,8 @@ import manFramed from "../assets/man_framed.png";
 import birthdayPrint from "../assets/birthday_print_framed.png";
 import parisFramed from "../assets/paris_framed.png";
 import lipsFramed from "../assets/lips-framed-no-shadow.png";
+import clubPainting from "../assets/club_painting.png";
+import manHands from "../assets/man_hands.png";
 import "../styles/ArtStyles.css";
 import CustomCursor from "./CustomCursor";
 
@@ -22,12 +24,18 @@ const FineArt: React.FC = () => {
 
     const onMouseOver = () => {
       const cursor = document.getElementById("customCursor");
-      if (cursor) cursor.style.backgroundColor = "#1F51FF";
+      if (cursor) {
+        cursor.style.backgroundColor = "#1F51FF";
+        cursor.style.opacity = "0.7";
+      }
     };
 
     const onMouseOut = () => {
       const cursor = document.getElementById("customCursor");
-      if (cursor) cursor.style.backgroundColor = "darkgray";
+      if (cursor) {
+        cursor.style.backgroundColor = "darkgray";
+        cursor.style.opacity = "1";
+      }
     };
 
     videos.forEach((video) => {
@@ -48,63 +56,42 @@ const FineArt: React.FC = () => {
       });
     };
   }, []);
-
+  
   return (
     <div>
       {showCursor && <CustomCursor />}
       <div>
         <Header />
       </div>
-      <div className="art-block-one">
-        <div className="artwork-row">
-          <img
-            className="artwork-image"
-            src={florentineFramed}
-            style={{
-              boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.5)",
-            }}
-            alt="Artwork"
-          />
-          <img
-            className="artwork-image"
-            src={lipsFramed}
-            style={{
-              boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.5)",
-            }}
-            alt="Artwork"
-          />
-          <div className="column">
-            <img className="artwork-image" src={birthdayPrint} alt="Artwork" />
-            <img
-              className="artwork-image"
-              style={{ boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.5)" }}
-              src={parisFramed}
-              alt="Artwork"
-            />
-          </div>
-        </div>
+      <div className="artwork-row">
+        <img className="main-image" src={florentineFramed} alt="profile-pic" />
+        <img className="main-image" src={clubPainting} alt="profile-pic" />
       </div>
-      <div className="art-block-two">
-        <div className="artwork-row">
-          <div className="column">
-            <img className="artwork-image" src={marblesFramed} alt="Artwork" />
-            <img
-              className="artwork-image"
-              src={beadedBencher}
-              style={{ boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.5)" }}
-              alt="Artwork"
-            />
-          </div>
-          <img className="artwork-image" src={abstractFramed} alt="Artwork" />
-          <img
-            className="artwork-image"
-            src={manFramed}
-            style={{
-              height: "70%",
-            }}
-            alt="Artwork"
-          />
-        </div>
+      <div className="artwork-row">
+        <img
+          className="main-image"
+          style={{ boxShadow: "7px 7px 7px rgba(0, 0, 0, 0.5)" }}
+          src={lipsFramed}
+          alt="profile-pic"
+        />
+        <img className="main-image" src={abstractFramed} alt="profile-pic" />
+      </div>
+      <div className="artwork-row">
+        <img className="main-image" src={marblesFramed} alt="profile-pic" />
+        <img className="main-image" src={beadedBencher} alt="profile-pic" />
+      </div>
+      <div className="artwork-row">
+        <img className="main-image" src={manFramed} alt="profile-pic" />
+        <img className="main-image" src={birthdayPrint} alt="profile-pic" />
+      </div>
+      <div className="artwork-row">
+        <img className="main-image" src={parisFramed} alt="profile-pic" />
+        <img
+          className="main-image"
+          src={manHands}
+          style={{ boxShadow: "7px 7px 7px rgba(0, 0, 0, 0.5)" }}
+          alt="profile-pic"
+        />
       </div>
     </div>
   );

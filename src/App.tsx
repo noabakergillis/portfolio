@@ -9,8 +9,24 @@ import About from "./components/About";
 import ScrollToTop from "./components/ScrollToTop";
 import Magnetform from "./components/Magnetform";
 import Audiovisual from "./components/Audiovisual";
+import Login from "./components/Login";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const correctPassword = "peanutbutter"; // Set your password here
+
+  const handleLogin = (password: String) => {
+    if (password === correctPassword) {
+      setIsLoggedIn(true);
+    } else {
+      alert("Incorrect password");
+    }
+  };
+
+  if (!isLoggedIn) {
+    return <Login onLogin={handleLogin} />;
+  }
+
   return (
     <Router>
       <ScrollToTop />
