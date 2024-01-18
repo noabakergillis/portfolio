@@ -61,7 +61,7 @@
 .grid-item video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This will ensure that the aspect ratio is maintained */
+  object-fit: contain; /* This will ensure that the aspect ratio is maintained */
 }
 
 @media (max-width: 600px) {

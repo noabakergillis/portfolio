@@ -56,7 +56,6 @@ const Design: React.FC = () => {
       <Header />
       <About />
       <HorizontalLine />
-
       <div className="project-block">
         <video className="project-row" controls>
           <source src="/compressed_pav_teaser.mp4" type="video/mp4" />
@@ -133,9 +132,35 @@ const Design: React.FC = () => {
         </video>
       </div>
       <div className="project-block">
-        <video className="project-row" controls muted>
-          <source src="/milab_robot.mp4" type="video/mp4" />
+        <video className="project-row" controls>
+          <source src="/bart_compressed.mp4" type="video/mp4" />
         </video>
+        <div className="project-description-block">
+          <div>
+            <Link style={{ textDecoration: "none" }} to="/pav">
+              <div className="project-title">Text Classification: Bart</div>
+            </Link>
+            <div className="project-description">
+              Bart is a data classifier used to categorize sentences or text
+              snippets. At Zencity, we used Bart to break down large datasets
+              for clients' perusal.
+            </div>
+            <div className="project-description" style={{ paddingTop: "15px" }}>
+              I built a full stack service for interacting with and serving the
+              Bart model. This included feature in Zencity's main product, a web
+              app that gave clients access to AI analysis of their data. Clients
+              could choose a subset of their data, input categories for
+              classification, and review back the classification results. I was
+              the only engineer who worked on this, on a team of data
+              scientists.
+            </div>
+            <div className="project-description" style={{ paddingTop: "15px" }}>
+              This video is an example of Bart at work.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="project-block">
         <div className="project-description-block">
           <div>
             <div className="project-title">Magnetform</div>
@@ -166,6 +191,9 @@ const Design: React.FC = () => {
             </Link>
           </div>
         </div>
+        <video className="project-row" controls muted>
+          <source src="/milab_robot.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
   );

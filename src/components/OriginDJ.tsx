@@ -43,7 +43,11 @@ const OriginDJ: React.FC = () => {
     };
   }, []);
 
-  const items = [originGUI, originLit, "/gui-with-seatbelt.mp4"];
+  const items = [
+    originGUI,
+    originLit,
+    "/gui-with-seatbelt.mp4",
+  ];
   return (
     <div>
       {showCursor && <CustomCursor />}
