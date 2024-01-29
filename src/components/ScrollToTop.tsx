@@ -6,9 +6,9 @@ const ScrollToTop: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [location.pathname]); // Trigger the effect when the pathname changes
+  }, [location.pathname]);
 
-  return null; // This component does not render anything
+  return null;
 };
 
 export default ScrollToTop;

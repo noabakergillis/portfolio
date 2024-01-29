@@ -1,5 +1,5 @@
 import Header from "./header";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import florentineFramed from "../assets/florentine_framed.png";
 import abstractFramed from "../assets/abstract_framed.png";
 import marblesFramed from "../assets/marbles_framed.png";

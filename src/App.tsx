@@ -36,7 +36,6 @@ function App() {
         <Route path="/origin-dj" element={<OriginDJ />} />
         <Route path="/magnetform" element={<Magnetform />} />
         <Route path="/audiovisual" element={<Audiovisual />} />
-        {/* Other routes */}
       </Routes>
     </Router>
   );

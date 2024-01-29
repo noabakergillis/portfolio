@@ -1,40 +1,38 @@
 .noa-logo {
   display: flex;
-  /* Adjust the gap to match your design preference */
   gap: 15px;
-  font-weight: 1000; /* Makes the font bold */
-  font-size: 40px; /* Increase the font size to make the logo much bigger */
+  font-weight: 1000;
+  font-size: 40px; 
   color: #f4f1ef;
 }
 
 .letter-box {
-  position: relative; /* Needed for absolute positioning of letters */
-  height: 70px; /* Adjust based on your requirement */
-  width: 70px; /* Adjust based on your requirement */
+  position: relative;
+  height: 70px; 
+  width: 70px; 
   display: flex;
-  align-items: center; /* This aligns the child elements (the letters) vertically center */
-  justify-content: center; /* This centers the child elements horizontally */
+  align-items: center; 
+  justify-content: center; 
 }
 
 .letter-box:nth-child(1) {
-  height: 70px; /* Adjust based on your requirement */
-  width: 55px; /* Adjust based on your requirement */
+  height: 70px;
+  width: 55px; 
 }
 .letter-box:nth-child(2) {
-  height: 50px; /* Adjust based on your requirement */
-  width: 40px; /* Adjust based on your requirement */
+  height: 50px; 
+  width: 40px; 
   margin-top: 30px;
 }
 .letter-box:nth-child(3) {
-  height: 55px; /* Adjust based on your requirement */
-  width: 55px; /* Adjust based on your requirement */
+  height: 55px; 
+  width: 55px; 
   font-size: 35px;
 }
 
-/* Positions the 'N' to the left */
 .letter-box:nth-child(1) span {
   position: absolute;
-  left: -2px; /* Adjust as necessary for the desired offset */
+  left: -2px; 
   top: 50%;
   font-size: 45px;
   transform: translateY(-50%);
@@ -42,11 +40,10 @@
 
 .letter-box:nth-child(2) span {
   position: absolute;
-  left: 5px; /* Adjust as necessary for the desired offset */
-  top: 5%; /* Moves 'o' a bit down from the center */
+  left: 5px; 
+  top: 5%; 
 }
 
-/* Keeps the 'A' centered */
 .letter-box:nth-child(3) span {
   position: absolute;
   left: 50%;

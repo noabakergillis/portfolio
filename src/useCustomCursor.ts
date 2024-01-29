@@ -18,32 +18,31 @@ export function useCustomCursor(hoverColor: string): void {
       }
     };
 
+    const addEventListeners = (el: Element): void => {
+      el.addEventListener("mouseover", onMouseOver);
+      el.addEventListener("mouseout", onMouseOut);
+    };
+
+    const removeEventListeners = (el: Element): void => {
+      el.removeEventListener("mouseover", onMouseOver);
+      el.removeEventListener("mouseout", onMouseOut);
+    };
+
     const updateEventListeners = (): void => {
       const clickableElements = document.querySelectorAll(
         'a, button, input, [role="button"], video'
       );
 
-      clickableElements.forEach((el) => {
-        el.removeEventListener("mouseover", onMouseOver);
-        el.removeEventListener("mousedown", onMouseOut);
-        el.removeEventListener("mouseout", onMouseOut);
-        el.addEventListener("mouseover", onMouseOver);
-        el.addEventListener("mousedown", onMouseOut);
-        el.addEventListener("mouseout", onMouseOut);
-      });
+      clickableElements.forEach(addEventListeners);
     };
 
     updateEventListeners();
 
     return (): void => {
       const clickableElements = document.querySelectorAll(
-        'a, button, input, [role="button"]'
+        'a, button, input, [role="button"], video'
       );
-      clickableElements.forEach((el) => {
-        el.removeEventListener("mouseover", onMouseOver);
-        el.removeEventListener("mousedown", onMouseOut);
-        el.removeEventListener("mouseout", onMouseOut);
-      });
+      clickableElements.forEach(removeEventListeners);
     };
   }, []);
 }
