@@ -32,6 +32,10 @@
   flex-direction: column;
 }
 
+video {
+  cursor: none !important;
+}
+
 /* Media query for mobile devices */
 @media (max-width: 1000px) {
   .project-title {

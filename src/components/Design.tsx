@@ -3,56 +3,16 @@ import HorizontalLine from "./horizontalLine";
 import "../styles/Design.css";
 import { Link } from "react-router-dom";
 import About from "./About";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import CustomCursor from "./CustomCursor";
+import { useCustomCursor } from "../useCustomCursor";
 
 const Design: React.FC = () => {
-  const [showCursor, setShowCursor] = useState(true);
-  useEffect(() => {
-    const clickableElements = document.querySelectorAll(
-      'a, button, input, [role="button"]'
-    );
-
-    const videos = document.querySelectorAll("video");
-
-    const onMouseOver = () => {
-      const cursor = document.getElementById("customCursor");
-      if (cursor) {
-        cursor.style.backgroundColor = "#F94541";
-        cursor.style.opacity = "0.7";
-      }
-    };
-
-    const onMouseOut = () => {
-      const cursor = document.getElementById("customCursor");
-      if (cursor) {
-        cursor.style.backgroundColor = "darkgray";
-        cursor.style.opacity = "1";
-      }
-    };
-
-    videos.forEach((video) => {
-      video.addEventListener("mouseover", () => setShowCursor(false));
-      video.addEventListener("mouseout", () => setShowCursor(true));
-    });
-
-    clickableElements.forEach((el) => {
-      el.addEventListener("mouseover", onMouseOver);
-      el.addEventListener("mousedown", onMouseOut);
-      el.addEventListener("mouseout", onMouseOut);
-    });
-
-    return () => {
-      clickableElements.forEach((el) => {
-        el.removeEventListener("mouseover", onMouseOver);
-        el.removeEventListener("mouseout", onMouseOut);
-      });
-    };
-  }, []);
+  useCustomCursor("#F94541");
 
   return (
     <div>
-      {showCursor && <CustomCursor />}
+      <CustomCursor />
       <Header />
       <About />
       <HorizontalLine />
@@ -147,15 +107,15 @@ const Design: React.FC = () => {
             </div>
             <div className="project-description" style={{ paddingTop: "15px" }}>
               I built a full stack service for interacting with and serving the
-              Bart model. This included feature in Zencity's main product, a web
-              app that gave clients access to AI analysis of their data. Clients
-              could choose a subset of their data, input categories for
-              classification, and review back the classification results. I was
-              the only engineer who worked on this, on a team of data
-              scientists.
+              Bart model. This included adding a feature in Zencity's main
+              product, a web app that gave clients access to AI analysis of
+              their data. Clients could choose a subset of their data, input
+              categories for classification, and review back the classification
+              results. I was the only engineer who worked on this, on a team of
+              data scientists.
             </div>
             <div className="project-description" style={{ paddingTop: "15px" }}>
-              This video is an example of Bart at work.
+              This video is an example of Bart at work on HuggingFace.
             </div>
           </div>
         </div>

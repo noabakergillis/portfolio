@@ -2,60 +2,19 @@ import Header from "./header";
 import "../styles/Pav.css";
 import magnetForm from "../assets/magnetform.jpeg";
 import magnetformPres from "../assets/magnetform-pres.jpeg";
-import pavModes from "../assets/pav_modes.png";
 import robotArms from "../assets/robot-arms.jpeg";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import CustomCursor from "./CustomCursor";
+import { useCustomCursor } from "../useCustomCursor";
 
 const Magnetform: React.FC = () => {
-  const [showCursor, setShowCursor] = useState(true);
-  useEffect(() => {
-    const clickableElements = document.querySelectorAll(
-      'a, button, input, [role="button"]'
-    );
-
-    const videos = document.querySelectorAll("video");
-
-    const onMouseOver = () => {
-      const cursor = document.getElementById("customCursor");
-      if (cursor) {
-        cursor.style.backgroundColor = "#1F51FF";
-        cursor.style.opacity = "0.7";
-      }
-    };
-
-    const onMouseOut = () => {
-      const cursor = document.getElementById("customCursor");
-      if (cursor) {
-        cursor.style.backgroundColor = "darkgray";
-        cursor.style.opacity = "1";
-      }
-    };
-
-    videos.forEach((video) => {
-      video.addEventListener("mouseover", () => setShowCursor(false));
-      video.addEventListener("mouseout", () => setShowCursor(true));
-    });
-
-    clickableElements.forEach((el) => {
-      el.addEventListener("mouseover", onMouseOver);
-      el.addEventListener("mousedown", onMouseOut);
-      el.addEventListener("mouseout", onMouseOut);
-    });
-
-    return () => {
-      clickableElements.forEach((el) => {
-        el.removeEventListener("mouseover", onMouseOver);
-        el.removeEventListener("mouseout", onMouseOut);
-      });
-    };
-  }, []);
+  useCustomCursor("#1F51FF");
 
   const items = [magnetForm, magnetformPres, robotArms];
 
   return (
     <div>
-      {showCursor && <CustomCursor />}
+      <CustomCursor />
       <div>
         <Header />
       </div>

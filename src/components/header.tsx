@@ -7,12 +7,11 @@ import { useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
   const location = useLocation();
-  const [workColor, setWorkColor] = useState("gray"); // Default color for 'WORK'
-  const [fineArtColor, setFineArtColor] = useState("gray"); // Default color for 'FINE ART'
+  const [workColor, setWorkColor] = useState("gray");
+  const [fineArtColor, setFineArtColor] = useState("gray");
   const [audiovisColor, setAudiovisColor] = useState("gray");
 
   useEffect(() => {
-    // Logic to determine the color based on the path
     if (location.pathname === "/fine-art") {
       setWorkColor("gray");
       setFineArtColor("black");

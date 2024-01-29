@@ -10,15 +10,11 @@
 }
 
 body {
-  cursor: none; /* Hide the default cursor */
+  cursor: none;
 }
 a,
 button,
 input,
 [role="button"] {
-  cursor: none !important; /* Hide the default cursor on all clickable elements */
-}
-
-video::-webkit-media-controls {
-  cursor: auto; /* Use default cursor for native controls */
+  cursor: none !important;
 }
