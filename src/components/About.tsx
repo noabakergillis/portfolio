@@ -8,7 +8,7 @@ const About: React.FC = () => {
       <img className="main-image" src={profilePic} alt="profile-pic" />
       <div style={{ width: "50%" }}>
         <div>
-          Hi! I'm a creative technologist based in Philadelphia. I'm passionate
+          Hi! I'm a design engineer based in Philadelphia. I'm passionate
           about exploring the intersection of design and engineering. I love
           making things that are beautiful and/or functional. I'm looking for a
           job doing just that, and I'm open to relocating for the right

@@ -33,7 +33,8 @@ const Design: React.FC = () => {
               from sketch to a working, drivable prototype in 6 months.
             </div>
             <div className="project-description" style={{ paddingTop: "15px" }}>
-              I worked primarily on UI design and implementation for a built-in
+              I worked on a small innovation team within Cruise for this
+              project, focusing on UI design and implementation for a built-in
               retractable tablet interface, which served as the user's main
               point of interaction with the car. I used Figma and Blender for
               designs, and built the app using Kotlin, Unity, and C#.
