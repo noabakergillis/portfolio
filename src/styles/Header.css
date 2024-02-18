@@ -30,7 +30,7 @@
 }
 
 .header-menu a div {
-  display: inline-block; 
+  display: inline-block;
   padding: 20px;
   font-weight: 600;
   text-decoration: none;
@@ -43,10 +43,16 @@
 }
 
 .header-item {
-  display: inline-block; 
+  display: inline-block;
   padding: 20px;
   font-weight: 600;
   text-decoration: none;
   color: gray;
   transition: transform 2s ease;
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding-bottom: 50px;
+  }
 }
