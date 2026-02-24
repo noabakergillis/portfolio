@@ -15,7 +15,7 @@ import CustomCursor from "./CustomCursor";
 import { useCustomCursor } from "../useCustomCursor";
 
 const FineArt: React.FC = () => {
-  useCustomCursor("#1F51FF");
+  useCustomCursor();
 
   return (
     <div>

@@ -8,7 +8,7 @@ import CustomCursor from "./CustomCursor";
 import { useCustomCursor } from "../useCustomCursor";
 
 const Magnetform: React.FC = () => {
-  useCustomCursor("#1F51FF");
+  useCustomCursor();
 
   const items = [magnetForm, magnetformPres, robotArms];
 

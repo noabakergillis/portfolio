@@ -7,7 +7,7 @@ interface LoginProps {
 }
 
 const Login: React.FC<LoginProps> = ({ onLogin }) => {
-  useCustomCursor("#FF1D8E");
+  useCustomCursor();
   const [password, setPassword] = useState<string>("");
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {

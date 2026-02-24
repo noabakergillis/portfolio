@@ -8,7 +8,7 @@ import CustomCursor from "./CustomCursor";
 import { useCustomCursor } from "../useCustomCursor";
 
 const Design: React.FC = () => {
-  useCustomCursor("#F94541");
+  useCustomCursor();
 
   return (
     <div>
@@ -16,6 +16,29 @@ const Design: React.FC = () => {
       <Header />
       <About />
       <HorizontalLine />
+      <div className="project-block">
+        <div className="project-description-block">
+          <div>
+            <div className="project-title">Aura Special Effect</div>
+            <div className="project-description">
+              Aura is a patented special effect for Netflix's newest design
+              language. It samples color gradients across an image or video
+              frame and casts a bleeding, dynamic glow, transforming the
+              interface into a more immersive, atmospheric world through light
+              and depth.
+            </div>
+            <div className="project-description" style={{ paddingTop: "15px" }}>
+              I built Aura for Netflix web using React and WebGL. I also built
+              the Aura designer tool, which allows designers to upload assets
+              and configure asset-specific aura glows, giving them direct
+              control over how Aura renders across different content.
+            </div>
+          </div>
+        </div>
+        <video className="project-row" controls>
+          <source src="/aura-demo.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div className="project-block">
         <video className="project-row" controls>
           <source src="/compressed_pav_teaser.mp4" type="video/mp4" />

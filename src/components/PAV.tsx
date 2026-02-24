@@ -8,7 +8,7 @@ import CustomCursor from "./CustomCursor";
 import { useCustomCursor } from "../useCustomCursor";
 
 const Pav: React.FC = () => {
-  useCustomCursor("#1F51FF");
+  useCustomCursor();
 
   const items = [
     "/compressed_drive_and_park.mp4",

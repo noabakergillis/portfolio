@@ -1,20 +1,18 @@
 import { useEffect } from "react";
 
-export function useCustomCursor(hoverColor: string): void {
+export function useCustomCursor(): void {
   useEffect(() => {
     const onMouseOver = (): void => {
       const cursor = document.getElementById("customCursor");
       if (cursor) {
-        cursor.style.backgroundColor = hoverColor;
-        cursor.style.opacity = "0.7";
+        cursor.classList.add("hovering");
       }
     };
 
     const onMouseOut = (): void => {
       const cursor = document.getElementById("customCursor");
       if (cursor) {
-        cursor.style.backgroundColor = "darkgray";
-        cursor.style.opacity = "1";
+        cursor.classList.remove("hovering");
       }
     };
 

@@ -43,6 +43,9 @@ const Header: React.FC = () => {
         <Link className={getLinkClassName("/audiovisual")} to="/audiovisual">
           <div style={{ color: audiovisColor }}>AUDIO VISUAL</div>
         </Link>
+        <a href="/Resume.pdf" download>
+          <div style={{ color: "gray" }}>RESUME</div>
+        </a>
       </div>
       <header className="header">
         <Link style={{ textDecoration: "none" }} to="/">

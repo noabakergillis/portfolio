@@ -7,7 +7,7 @@ import CustomCursor from "./CustomCursor";
 import { useCustomCursor } from "../useCustomCursor";
 
 const OriginDJ: React.FC = () => {
-  useCustomCursor("#1F51FF");
+  useCustomCursor();
 
   const items = [originGUI, originLit, "/gui-with-seatbelt.mp4"];
   return (

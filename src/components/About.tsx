@@ -8,10 +8,10 @@ const About: React.FC = () => {
       <img className="main-image" src={profilePic} alt="profile-pic" />
       <div className="profile-block-div">
         <div>
-          Hi! I'm a design engineer based in Philadelphia. I'm passionate about
+          Hi! I'm a design engineer based in NYC. I work at Netflix, focusing
+          on delight and special effects. I'm passionate about
           exploring the intersection of design and engineering. I love making
-          things that are beautiful and/or functional. I'm looking for a job
-          doing just that, and I'm open to relocating for the right adventure.
+          things that are beautiful and/or functional. 
         </div>
         <div style={{ marginTop: "25px" }}>
           Scroll down to see some recent work.
